@@ -1,0 +1,217 @@
+:root {
+    --cor-de-fundo: #ebecee;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+header .inicio {
+    display: flex;
+    align-items: center;
+}
+
+header .inicio .logo {
+    display: flex;
+    gap: 10px;
+    font-size: 28px;
+}
+
+header .inicio nav ul {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+header .fim {
+    display: flex;
+    gap: 10px;
+}
+
+header .fim .icone {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+}
+
+main .pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .pesquisa {
+    padding: 50px 0px;
+    background-color: #002F52;
+    color: #fff;
+}
+
+main .pesquisa h1 {
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+main .pesquisa .botao-pesquisa {
+    display: flex;
+    gap: 10px;
+    padding: 0px 120px;
+    margin: 10px 0px;
+    border-radius: 50px;
+    border: 2px #fff solid;
+}
+
+main .livros .titulo {
+    color: #EB9B00;
+    font-weight: 800;
+    background-color: #fff;
+    padding: 5px 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+main .livros .conteudo {
+    margin: 25px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .livros .conteudo .bloco {
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    width: 450px;
+    box-shadow: 1px 2px 2px 0px;
+    margin: 15px;
+}
+
+main .livros .conteudo .bloco .textos {
+    width: 400px;
+}
+
+main .livros .conteudo .bloco .textos .icones {
+    display: flex;
+    gap: 15px;
+}
+
+main .livros .conteudo .bloco .textos h1 {
+    font-size: 30px;
+    color: #EB9B00;
+    margin: 0px;
+}
+
+main .livros .conteudo .bloco .imagem .botao {
+    background-color: #EB9B00;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+}
+
+.swiper {
+    width: 50%;
+}
+
+.swiper-slide img {
+    width: 200px;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 10px;
+}
+
+main .topicos-visitados {
+    padding: 15px 0px;
+    margin: 0px;
+    background-color: #002F52;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .topicos-visitados .topicos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .topicos-visitados .topicos .topico {
+    padding: 15px;
+    background-color: #EB9B00;
+    margin: 10px;
+    font-size: 20px;
+}
+
+footer .bloco1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    background-color: #fff;
+}
+
+footer .bloco1 .infos {
+    color: #002F52;
+}
+
+footer .bloco1 .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: #002F52 solid 2px;
+    color: #002F52;
+    padding: 5px 50px;
+    border-radius: 50px;
+}
+
+footer .bloco2 {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+}
+
+footer .bloco2 .parte1 {
+    padding: 0px;
+}
+
+footer .bloco2 .parte2 .linha {
+    display: flex;
+    gap: 5px;
+}
+
+
+@media (max-width: 1024px) {
+    header .fim .icone p {
+        display: none;
+    }
+
+    .swiper {
+        width: 85%;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+}
+
+
